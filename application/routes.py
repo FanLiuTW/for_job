@@ -16,7 +16,7 @@ def hello():
     db.session.commit()
 
     new_record_2 = category(
-        marjorid = ,
+        marjorid = 2,
         major = "science"
     )
     
