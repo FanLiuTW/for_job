@@ -8,7 +8,7 @@ import base64
 @app.route('/')
 def hello():
     new_record_1 = category(
-        marjorid = 1,
+        majorid = 1,
         major = "math"
     )
     
@@ -16,7 +16,7 @@ def hello():
     db.session.commit()
 
     new_record_2 = category(
-        marjorid = 2,
+        majorid = 2,
         major = "science"
     )
     
@@ -24,7 +24,7 @@ def hello():
     db.session.commit()
 
     new_record_3 = category(
-        marjorid = 3,
+        majorid = 3,
         major = "english"
     )
     
@@ -32,7 +32,7 @@ def hello():
     db.session.commit()
 
     new_record_4 = category(
-        marjorid = 4,
+        majorid = 4,
         major = "chinese"
     )
     
@@ -40,7 +40,7 @@ def hello():
     db.session.commit()
 
     new_record_5 = category(
-        marjorid = 5,
+        majorid = 5,
         major = "geography"
     )
 
