@@ -7,6 +7,46 @@ import base64
 """Root route for render main page"""
 @app.route('/')
 def hello():
+    new_record_1 = category(
+        marjorid = 1,
+        major = "math"
+    )
+    
+    db.session.add(new_record_1)
+    db.session.commit()
+
+    new_record_2 = category(
+        marjorid = ,
+        major = "science"
+    )
+    
+    db.session.add(new_record_2)
+    db.session.commit()
+
+    new_record_3 = category(
+        marjorid = 3,
+        major = "english"
+    )
+    
+    db.session.add(new_record_3)
+    db.session.commit()
+
+    new_record_4 = category(
+        marjorid = 4,
+        major = "chinese"
+    )
+    
+    db.session.add(new_record_4)
+    db.session.commit()
+
+    new_record_5 = category(
+        marjorid = 5,
+        major = "geography"
+    )
+
+    db.session.add(new_record_5)
+    db.session.commit()
+
     return render_template('index.html')
 
 """Route for http request"""
